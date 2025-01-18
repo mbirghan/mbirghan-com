@@ -7,12 +7,12 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Spencer Sharp',
+    template: '%s - Moritz Birghan',
     default:
-      'Spencer Sharp - Software designer, founder, and amateur astronaut',
+      'Moritz Birghan - Software Engineer, Founder, and Amateur Powerlifter',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m Moritz, a passionate software engineer and entrepreneur based in Berlin. With over 8 years of professional experience, I thrive in team environments, love solving challenging problems, and am always eager to learn and improve.',
   alternates: {
     types: {
       // If we're on Vercel, use the VERCEL_URL environment variable

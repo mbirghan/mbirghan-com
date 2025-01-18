@@ -8,8 +8,8 @@ export async function GET(req: Request) {
     : 'http://localhost:3000'
 
   let author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Moritz Birghan',
+    email: 'mb@mbirghan.com',
   }
 
   let feed = new Feed({
