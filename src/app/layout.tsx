@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      // If we're on Vercel, use the VERCEL_URL environment variable
+      // Otherwise, use localhost:3000 (for local development)
+      // TODO: This should be set in some env variable properly
+      'application/rss+xml': `${process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'}/feed.xml`,
     },
   },
 }
