@@ -216,14 +216,14 @@ function Resume() {
     },
     {
       company: 'Stayfriends',
-      title: 'Software Engineer (Working Student)',
+      title: 'Software Engineer (Student Worker)',
       logo: logoStayfriends,
       start: '2018',
       end: '2019',
     },
     {
       company: 'czichos.net',
-      title: 'Software Engineer (Working Student)',
+      title: 'Software Engineer (Student Worker)',
       logo: logoCzichos,
       start: '2017',
       end: '2018',
@@ -320,7 +320,10 @@ export default async function Home() {
             </div>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            {/* TODO: this should be removed */}
             <Newsletter />
+            {/* TODO: Make this clickable and add resume section */}
+            {/* TODO: Add CV for download */}
             <Resume />
           </div>
         </div>
