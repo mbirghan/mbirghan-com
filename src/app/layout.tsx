@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Moritz Birghan',
     default:
-      'Moritz Birghan - Software Engineer, Founder, and Amateur Powerlifter',
+      'Moritz Birghan - Software Engineer, Founder, and Coffee Enthusiast',
   },
   description:
     'I’m Moritz, a passionate software engineer and startup founder based in Berlin. With over 8 years of professional experience, I thrive in team environments, love solving challenging problems, and am always eager to learn and improve.',
