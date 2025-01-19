@@ -34,6 +34,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
   )
 }
 
+// TODO: Should the paper I wrote live here or in the projects section?
 export const metadata: Metadata = {
   title: 'Articles',
   description:

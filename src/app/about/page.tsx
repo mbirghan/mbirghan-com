@@ -69,8 +69,7 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Moritz Birghan. I live in Berlin, where I build software with
-            the technologies I love most and the ones I still want to explore.
+            I’m Moritz a Berlin based engineer, who loves to build and explore.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             {/* TODO: This should be a bit more detailed */}
@@ -104,12 +103,12 @@ export default function About() {
             <p>
               Eventually, I moved into big tech, where I first gained valuable
               insights into cryptography and security. Later on, I worked on
-              large-scale AI infrastructure doing everything from building ML
-              libraries, online and offline training of models as well as
-              hosting and monitoring the inference systems. Essentially I worked
-              on everything that we now call MLOps. This experience allowed me
-              to see how cutting-edge machine learning systems can be developed,
-              tested, and deployed to handle massive amounts of data.
+              large-scale AI infrastructure building everything from ML
+              libraries, online and offline training pipelines as well as
+              hosting and monitoring systems. Essentially I worked on everything
+              that we now call MLOps. This experience allowed me to see how
+              cutting-edge machine learning systems can be developed, tested,
+              and deployed to handle massive amounts of data.
             </p>
 
             <p>
