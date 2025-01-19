@@ -249,6 +249,7 @@ function Resume() {
   )
 }
 
+// TODO: Change photos
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
@@ -277,8 +278,6 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
-
   return (
     <>
       <Container className="mt-9">
@@ -286,6 +285,7 @@ export default async function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Software Engineer, Founder, and Coffee Enthusiast.
           </h1>
+          {/* TODO: Rewrite this */}
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Moritz, a passionate software engineer and startup founder based
             in Berlin. With over 8 years of professional experience, I thrive in
@@ -320,7 +320,7 @@ export default async function Home() {
             </div>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* TODO: this should be removed */}
+            {/* TODO: this should be removed or made useful */}
             <Newsletter />
             {/* TODO: Make this clickable and add resume section */}
             {/* TODO: Add CV for download */}

@@ -5,16 +5,15 @@ export interface Project {
   name: string
   description: string
   link: { href: string; label: string }
-  logo: any
 }
 
+// TODO: Add more projects
 export const projects: Project[] = [
   {
     name: 'Miv',
     description:
       'A terminal based text editor inspired by vim written in rust.',
     link: { href: 'https://github.com/mbirghan/miv', label: 'github.com' },
-    logo: logoPlanetaria,
   },
   {
     name: 'mbirghan.com',
@@ -23,6 +22,14 @@ export const projects: Project[] = [
       href: 'https://github.com/mbirghan/mbirghan-com',
       label: 'github.com',
     },
-    logo: logoAnimaginary,
+  },
+  {
+    name: 'Electomate',
+    description:
+      'Contributed to a platform support democratic elections with AI',
+    link: {
+      href: 'https://electomate.com/',
+      label: 'electomate.com',
+    },
   },
 ]

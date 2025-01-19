@@ -20,6 +20,7 @@ interface Role {
 }
 
 // TODO: This should be the same as on the home page
+// TODO: Add description to each role
 let resume: Array<Role> = [
   {
     company: 'Stealth',
