@@ -12,7 +12,7 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import clsx from 'clsx'
-
+import { sections, type Section } from '@/lib/sections'
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
 
@@ -121,11 +121,11 @@ function MobileNavigation(
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-            <MobileNavItem href="/about">About</MobileNavItem>
-            <MobileNavItem href="/resume">Resume</MobileNavItem>
-            <MobileNavItem href="/articles">Articles</MobileNavItem>
-            <MobileNavItem href="/projects">Projects</MobileNavItem>
-            <MobileNavItem href="/uses">Uses</MobileNavItem>
+            {sections.map((section: Section) => (
+              <MobileNavItem key={section.title} href={section.href}>
+                {section.title}
+              </MobileNavItem>
+            ))}
           </ul>
         </nav>
       </PopoverPanel>
@@ -166,12 +166,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/resume">Resume</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
+        {sections.map((section: Section) => (
+          <NavItem key={section.title} href={section.href}>
+            {section.title}
+          </NavItem>
+        ))}
       </ul>
     </nav>
   )
