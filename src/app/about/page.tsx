@@ -69,36 +69,56 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Moritz Birghan. I live in Berlin, where I build software for the
-            future.
+            I’m Moritz Birghan. I live in Berlin, where I build software with
+            the technologies I love most and the ones I still want to explore.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            {/* TODO: Add more content here */}
+            {/* TODO: This should be a bit more detailed */}
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I’ve always been fascinated by how things work, whether it was
+              taking apart my toys as a kid or tackling puzzles that required
+              logical thinking. This curiosity led me to start learning C++ at
+              the age of 13 — definitely not the easiest beginner language, but
+              it gave me a strong foundation in how computers handle
+              instructions and data.
             </p>
+
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              As my interest in programming grew, I began experimenting with
+              small websites and web apps, seeing firsthand how code could shape
+              the online world. By the time I was 15, I decided to push my
+              skills further and enrolled in my first university computer
+              science course, where I dove into C and Java.
             </p>
+
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              During my university years, I discovered a deep passion for
+              low-level programming, drawn to how these systems worked under the
+              hood. My first job out of school gave me an incredible range of
+              hands-on experience: I soldered IoT devices to modernize old
+              injection molding machines, built physical servers for VOIP
+              telephony, and setting up the VOIP systems themselves — from
+              configuring the software to placing the physical phones on desks.
             </p>
+
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              Eventually, I moved into big tech, where I first gained valuable
+              insights into cryptography and security. Later on, I worked on
+              large-scale AI infrastructure doing everything from building ML
+              libraries, online and offline training of models as well as
+              hosting and monitoring the inference systems. Essentially I worked
+              on everything that we now call MLOps. This experience allowed me
+              to see how cutting-edge machine learning systems can be developed,
+              tested, and deployed to handle massive amounts of data.
+            </p>
+
+            <p>
+              These days, I’m channeling all those experiences into my own
+              projects, building tools and applications with the technologies I
+              love most and the ones I still want to explore. This passion for
+              hands-on creation has naturally evolved into starting my own
+              company — a venture driven by my eagerness to learn, innovate, and
+              bring exciting new ideas into the world.
             </p>
           </div>
         </div>
