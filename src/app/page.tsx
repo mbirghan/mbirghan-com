@@ -276,8 +276,8 @@ export default async function Home() {
             Software Engineer, Founder, and Amateur Powerlifter.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Moritz, a passionate software engineer and entrepreneur based in
-            Berlin. With over 8 years of professional experience, I thrive in
+            I’m Moritz, a passionate software engineer and startup founder based
+            in Berlin. With over 8 years of professional experience, I thrive in
             team environments, love solving challenging problems, and am always
             eager to learn and improve.
           </p>
