@@ -1,0 +1,20 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Moritz Birghan',
+  date: '2025-01-19',
+  title: 'Building my personal website',
+  description:
+    'A short example article about building my personal website with Next.js and Tailwind CSS.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+# Example Article
+
+This is an example article about building my personal website with Next.js and Tailwind CSS.

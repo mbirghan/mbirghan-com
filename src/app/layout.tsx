@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Moritz Birghan - Software Engineer, Founder, and Amateur Powerlifter',
   },
   description:
-    'I’m Moritz, a passionate software engineer and entrepreneur based in Berlin. With over 8 years of professional experience, I thrive in team environments, love solving challenging problems, and am always eager to learn and improve.',
+    'I’m Moritz, a passionate software engineer and startup founder based in Berlin. With over 8 years of professional experience, I thrive in team environments, love solving challenging problems, and am always eager to learn and improve.',
   alternates: {
     types: {
       // If we're on Vercel, use the VERCEL_URL environment variable
