@@ -7,11 +7,6 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { Project } from '@/components/Project'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import logoAmazon from '@/images/logos/amazon.svg'
-import logoCzichos from '@/images/logos/czichos.svg'
-import logoFirefox from '@/images/logos/firefox.svg'
-import logoStayfriends from '@/images/logos/stayfriends.png'
-import logoStealth from '@/images/logos/stealth.jpg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -20,6 +15,7 @@ import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { projects } from '@/lib/projects'
+import { resume, type Role } from '@/lib/resume'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -137,22 +133,12 @@ function Newsletter() {
   )
 }
 
-interface Role {
-  company: string
-  title: string
-  logo: ImageProps['src']
-  start: string | { label: string; dateTime: string }
-  end: string | { label: string; dateTime: string }
-}
-
 function Role({ role }: { role: Role }) {
-  let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
-  let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
+  let startLabel = role.startYear
+  let startDate = role.startYear
 
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  let endLabel = role.endYear
+  let endDate = role.endYear
 
   return (
     <li className="flex gap-4">
@@ -188,48 +174,6 @@ function Role({ role }: { role: Role }) {
 }
 
 function Resume() {
-  // TODO: Get SVGs from https://svgrepo.com/
-  let resume: Array<Role> = [
-    {
-      company: 'Stealth',
-      title: 'Co-Founder',
-      logo: logoStealth,
-      start: '2024',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
-    },
-    {
-      company: 'Amazon',
-      title: 'Software Development Engineer',
-      logo: logoAmazon,
-      start: '2022',
-      end: '2024',
-    },
-    {
-      company: 'Mozilla',
-      title: 'Software Engineer',
-      logo: logoFirefox,
-      start: '2019',
-      end: '2022',
-    },
-    {
-      company: 'Stayfriends',
-      title: 'Software Engineer (Student Worker)',
-      logo: logoStayfriends,
-      start: '2018',
-      end: '2019',
-    },
-    {
-      company: 'czichos.net',
-      title: 'Software Engineer (Student Worker)',
-      logo: logoCzichos,
-      start: '2017',
-      end: '2018',
-    },
-  ]
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
