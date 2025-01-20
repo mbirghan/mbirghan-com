@@ -314,7 +314,7 @@ export default async function Home() {
               Projects
             </h2>
             <div className="flex flex-col gap-16">
-              {projects.map((project) => (
+              {projects.slice(0, 4).map((project) => (
                 <Project key={project.name} project={project} />
               ))}
             </div>
