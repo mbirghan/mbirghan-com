@@ -2,6 +2,7 @@ import assert from 'assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
+// TODO: Figure out if I want to keep this
 export async function GET(req: Request) {
   let siteUrl = process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
