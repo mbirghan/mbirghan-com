@@ -32,7 +32,7 @@ export const projects: Project[] = [
   {
     name: 'mbirghan.com',
     description:
-      'This very website you are looking at. Built with Next.js and Tailwind CSS.',
+      'This very website you are looking at. My personal website to share some of my projects and experiences.',
     link: {
       href: 'https://github.com/mbirghan/mbirghan-com',
       label: 'github.com',
