@@ -34,7 +34,6 @@ function Article({ article }: { article: ArticleWithSlug }) {
   )
 }
 
-// TODO: rewrite the intro
 export const metadata: Metadata = {
   title: 'Articles',
   description: 'Publications, Articles and other things I have written.',

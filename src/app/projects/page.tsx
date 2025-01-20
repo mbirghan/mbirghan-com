@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description: 'Things I’ve made trying to put my dent in the universe.',
 }
 
-// TODO: The texts need to be rewritten
 export default function Projects() {
   return (
     <SimpleLayout

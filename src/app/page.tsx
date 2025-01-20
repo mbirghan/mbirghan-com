@@ -221,6 +221,7 @@ function Photos() {
   )
 }
 
+// TODO: Find hydration issue
 export default async function Home() {
   return (
     <>
@@ -266,7 +267,6 @@ export default async function Home() {
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* TODO: this should is cool to have but not sure how to make it useful */}
             {/* <Newsletter /> */}
-            {/* TODO: Make this clickable and add resume section */}
             {/* TODO: Add CV for download */}
             <Resume />
           </div>
