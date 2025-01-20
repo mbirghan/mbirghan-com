@@ -229,7 +229,6 @@ export default async function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Software Engineer, Founder, and Coffee Enthusiast.
           </h1>
-          {/* TODO: Rewrite this */}
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Moritz, a passionate software engineer and startup founder based
             in Berlin. With over 8 years of professional experience, I thrive in

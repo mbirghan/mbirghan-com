@@ -1,0 +1,24 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Moritz Birghan and Thyla van der Merwe',
+  date: '2022-06-19',
+  title: 'A Client-Side Seat to TLS Deployment',
+  description:
+    'Using client-side TLS telemetry data, we analyze the adoption of TLS 1.3 features like 0-RTT and post-handshake authentication that were previously unmeasurable through passive monitoring.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+What started as my Bachelor's thesis grew into a collaborative research paper with my mentor, Dr. Thyla van der Merwe from ETH Zurich. I had the honor of presenting our findings at the [2022 IEEE Security and Privacy Workshops (SPW)](https://ieeexplore.ieee.org/xpl/conhome/9833855/proceeding) in San Francisco in May 2022.
+
+## Abstract
+
+The official release of the latest version of the Transport Layer Security (TLS) protocol, namely TLS 1.3, has been accompanied by rapid adoption across the Web. In 2019, Holz et al. set out to measure this adoption, i.e., deployment and uptake of the protocol (CoRR 2019). Whilst informative and undeniably useful for the TLS community, Holz et al. note that they were unable to measure some of the newer features of TLS 1.3, including zero round-trip time (0-RTT) and post-handshake authentication (PHA). The altered structure of TLS 1.3, with more encryption of the handshake, renders measurement of these features impossible via passive monitoring and Internet scanning. Access to client-side TLS telemetry enables our work to address these limitations, and presents a clearer view of the TLS 1.3 adoption landscape. Specifically, our work comments on the true acceptance rate of client-generated early data, and on the odd usage patterns surrounding client authentication that occurs post-handshake. Our work also presents an up-to-date measurement of TLS 1.3 deployment, both confirming and extending the predictions and results presented by Holz et al.
+
+[A Client-Side Seat to TLS Deployment](https://ieeexplore.ieee.org/document/9833861/)

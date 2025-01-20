@@ -72,7 +72,6 @@ export default function About() {
             I’m Moritz a Berlin based engineer, who loves to build and explore.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            {/* TODO: This should be a bit more detailed */}
             <p>
               I’ve always been fascinated by how things work, whether it was
               taking apart my toys as a kid or tackling puzzles that required
