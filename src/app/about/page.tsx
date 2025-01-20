@@ -98,20 +98,18 @@ export default function About() {
               Eventually, I moved into big tech, where I first gained valuable
               insights into cryptography and security. Later on, I worked on
               large-scale AI infrastructure building everything from ML
-              libraries, online and offline training pipelines as well as
-              hosting and monitoring systems. Essentially I worked on everything
-              that we now call MLOps. This experience allowed me to see how
-              cutting-edge machine learning systems can be developed, tested,
-              and deployed to handle massive amounts of data.
+              libraries, online and offline training pipelines, feature stores
+              as well as inference and monitoring systems. Essentially I worked
+              on everything that we now call MLOps. This experience allowed me
+              to see how cutting-edge machine learning systems can be developed,
+              tested, and deployed to handle massive amounts of data.
             </p>
 
             <p>
-              These days, I’m channeling all those experiences into my own
-              projects, building tools and applications with the technologies I
-              love most and the ones I still want to explore. This passion for
-              hands-on creation has naturally evolved into starting my own
-              company — a venture driven by my eagerness to learn, innovate, and
-              bring exciting new ideas into the world.
+              Today, I'm working on my own projects, using both familiar tools
+              and learning new ones along the way. I recently started my own
+              company where I get to build useful things while continuing to
+              learn and grow as a developer.
             </p>
           </div>
         </div>
