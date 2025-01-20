@@ -101,7 +101,7 @@ export default async function Resume() {
       title="Moritz Birghan - Software Engineer"
       intro="Passionate software engineer and startup founder based in Berlin. With over 8 years of professional experience, I thrive in team environments, love solving challenging problems, and am always eager to learn and improve."
       footer={
-        <div className="mt-6 flex gap-6">
+        <div className="mt-6 flex flex-col gap-6 md:flex-row">
           <SocialLink href="mailto:mb@mbirghan.com" icon={MailIcon}>
             mb@mbirghan.com
           </SocialLink>
