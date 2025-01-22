@@ -33,6 +33,8 @@ export function Footer() {
                     {section.title}
                   </NavLink>
                 ))}
+                <NavLink href="/impressum">Impressum</NavLink>
+                <NavLink href="/privacy-policy">Datenschutz</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Moritz Birghan. All rights
