@@ -63,7 +63,7 @@ function Role({ role }: { role: Role }) {
             </Card.Title>
             <Card.Description>
               {role.description.map((description) => (
-                <p key={description}>{description}</p>
+                <span key={description}>{description}</span>
               ))}
             </Card.Description>
           </div>

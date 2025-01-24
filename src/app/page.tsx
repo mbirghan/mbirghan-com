@@ -221,7 +221,6 @@ function Photos() {
   )
 }
 
-// TODO: Find hydration issue
 export default async function Home() {
   return (
     <>
