@@ -6,6 +6,12 @@ export default function Impressum() {
       <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
         <p>
           {process.env.NAME}
+          {process.env.CO && (
+            <>
+              <br />
+              {process.env.CO}
+            </>
+          )}
           <br />
           {process.env.ADDRESS}
           <br />

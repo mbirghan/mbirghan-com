@@ -155,6 +155,12 @@ export default function PrivacyPolicy() {
         </p>{' '}
         <p>
           {process.env.NAME}
+          {process.env.CO && (
+            <>
+              <br />
+              {process.env.CO}
+            </>
+          )}
           <br />
           {process.env.ADDRESS}
           <br />
