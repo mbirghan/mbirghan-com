@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import { Button } from '@/components/Button'
 
 import { resume, type Role } from '@/lib/resume'
 
@@ -15,6 +16,19 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       <path
         fillRule="evenodd"
         d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
+      />
+    </svg>
+  )
+}
+
+function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )
@@ -101,7 +115,7 @@ export default async function Resume() {
       title="Moritz Birghan - Software Engineer"
       intro="Passionate software engineer and startup founder based in Berlin. With over 8 years of professional experience, I thrive in team environments, love solving challenging problems, and am always eager to learn and improve."
       footer={
-        <div className="mt-6 flex flex-col gap-6 md:flex-row">
+        <div className="flex flex-col gap-6 md:flex-row">
           <SocialLink href="mailto:mb@mbirghan.com" icon={MailIcon}>
             mb@mbirghan.com
           </SocialLink>
@@ -118,10 +132,20 @@ export default async function Resume() {
       }
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+        <div className="mb-16"></div>
         <div className="flex max-w-3xl flex-col space-y-16">
           {resume.map((role) => (
             <Role key={role.company} role={role} />
           ))}
+        </div>
+        <div className="mt-16 flex justify-center">
+          <Button
+            href="/Moritz-Birghan-CV.pdf"
+            className="group flex w-full max-w-3xl items-center justify-center gap-3 px-6 py-3 text-base"
+          >
+            Download CV
+            <ArrowDownIcon className="h-5 w-5 stroke-zinc-400 transition group-hover:stroke-zinc-600 dark:group-hover:stroke-zinc-300" />
+          </Button>
         </div>
       </div>
     </SimpleLayout>
