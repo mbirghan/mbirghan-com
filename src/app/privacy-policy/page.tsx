@@ -161,8 +161,12 @@ export default function PrivacyPolicy() {
           {process.env.CITY}
         </p>
         <p>
-          Telefon: {process.env.PHONE}
-          <br />
+          {process.env.PHONE && (
+            <>
+              Telefon: {process.env.PHONE}
+              <br />
+            </>
+          )}
           E-Mail: {process.env.EMAIL}
         </p>
         <p>
