@@ -37,11 +37,12 @@ export const resume: Array<Role> = [
     endDate: 'Sep 2024',
     startYear: '2022',
     endYear: '2024',
-    // TODO: This should be more detailed
     description: [
-      'At Amazon Music, I developed model training and inference infrastructure while leading cross-team integration between multiple ML services.',
-      'I designed and implemented a model monitoring service for both training and inference workflows.',
-      'Through optimization efforts, I successfully reduced training infrastructure costs by 91%.',
+      'Led development of ML infrastructure at Amazon Music, focusing on model training pipelines and cross-service integration.',
+      'Created comprehensive monitoring solutions for ML systems, covering both training and inference phases.',
+      'Architected and deployed real-time model performance monitoring and alerting systems.',
+      'Built end-to-end MLOps infrastructure including custom libraries, training pipelines, feature stores, and monitoring tools.',
+      'Achieved 91% cost reduction in training infrastructure through strategic optimizations.',
     ],
   },
   {
@@ -53,11 +54,11 @@ export const resume: Array<Role> = [
     startYear: '2019',
     endYear: '2022',
     description: [
-      'As a key member of the Mozilla VPN team, I developed a cross-platform VPN application in C++ while taking ownership of the iOS codebase and other critical components.',
-      'I led engineering teams on major projects and drove improvements to our development process through CI extensions.',
-      'Since security and privacy were paramount, I implemented innovative solutions for data protection including methods to keep sensitive data on device.',
-      'While working with the cryptography team I built a comprehensive testing framework for cryptographic algorithms, and developed certificate management tools.',
-      'I also made contributions to Firefox by enhancing its certificate manager functionality.',
+      'Developed a cross-platform VPN application in C++ as a core member of the Mozilla VPN team, with primary responsibility for the iOS codebase.',
+      'Led the work to enhance development workflows by implementing automated CI/CD improvements.',
+      'Designed and built secure data protection systems focused on keeping sensitive information stored locally on user devices.',
+      'Created an extensive testing framework for cryptographic algorithms and built certificate management tooling while collaborating with the cryptography team.',
+      'Contributed to Firefox browser development by implementing improvements to certificate management capabilities.',
     ],
   },
   {
@@ -69,7 +70,7 @@ export const resume: Array<Role> = [
     startYear: '2018',
     endYear: '2019',
     description: [
-      'Implemented data management improvements for the server backend with Java and MongoDB.',
+      'Enhanced server-side data handling and storage systems using Java and MongoDB.',
     ],
   },
   {
@@ -81,8 +82,8 @@ export const resume: Array<Role> = [
     startYear: '2017',
     endYear: '2018',
     description: [
-      `Developed an IoT controller for old injection molding machines using ESP8266 which allowd the machines to be controlled via a web portal.`,
-      `Build and deployed physical servers and phones for VOIP telephony in addition to setting up and configuring the VOIP backend.`,
+      'Designed and implemented IoT microcontrollers to modernize legacy injection molding machines with web-based control capabilities.',
+      'Deployed complete VOIP telephony infrastructure including physical server setup, phone installation, and backend system configuration.',
     ],
   },
 ]

@@ -14,7 +14,6 @@ import {
 import clsx from 'clsx'
 import { sections, type Section } from '@/lib/sections'
 import { Container } from '@/components/Container'
-// TODO: Do I want to change this?
 import avatarImage from '@/images/avatar.jpg'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
