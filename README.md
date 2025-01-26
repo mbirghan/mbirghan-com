@@ -1,37 +1,46 @@
-<!-- TODO: Update the README.md -->
-# Spotlight
+# mbirghan.com
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+My personal website built with Next.js and Tailwind CSS. Visit [mbirghan.com](https://mbirghan.com) to see it live.
 
-## Getting started
+## Overview
 
-To get started with this template, first install the npm dependencies:
+This is my personal website where I share my work experience, projects, and articles. Features include:
 
+- Responsive design with dark/light mode support
+- Project showcase with GitHub activity visualization
+- Blog/Articles section for publications and technical writing
+- Resume/CV section with downloadable PDF
+
+## Technologies
+
+- [Next.js](https://nextjs.org) - React framework for production
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- [Vercel](https://vercel.com) - Deployment platform
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/mbirghan/mbirghan-com.git
+cd mbirghan-com
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-Next, run the development server:
+3. Create a `.env` file in the root directory with required environment variables:
+```env
+NAME=your_name
+EMAIL=your_email
+ADDRESS=your_address
+CITY=your_city
+```
 
+4. Start the development server:
 ```bash
 npm run dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
