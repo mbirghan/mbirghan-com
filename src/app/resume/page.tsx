@@ -77,7 +77,10 @@ function Role({ role }: { role: Role }) {
             </Card.Title>
             <Card.Description>
               {role.description.map((description) => (
-                <span key={description}>{description}</span>
+                <span key={description} className="block flex items-baseline">
+                  <span className="mr-3">•</span>
+                  {description}
+                </span>
               ))}
             </Card.Description>
           </div>
