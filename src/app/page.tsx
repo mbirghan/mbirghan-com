@@ -1,19 +1,10 @@
-import Image, { type ImageProps } from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { Project } from '@/components/Project'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
 import { projects } from '@/lib/projects'
 import { resume, type Role } from '@/lib/resume'
 
@@ -61,21 +52,6 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
-
-function Article({ article }: { article: ArticleWithSlug }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
   )
 }
 
@@ -185,8 +161,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      {/* TODO: Add GitHub activity here */}
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-12 md:mt-16">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="order-2 lg:order-1">
             <h2 className="mb-8 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
