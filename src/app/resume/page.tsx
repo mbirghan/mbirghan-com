@@ -142,6 +142,7 @@ export default async function Resume() {
           ))}
         </div>
         <div className="mt-16 flex justify-center">
+          {/* TODO: I should update the CV to be similar to the content here (on canva) */}
           <Button
             href="/Moritz-Birghan-CV.pdf"
             className="group flex w-full max-w-3xl items-center justify-center gap-3 px-6 py-3 text-base"
